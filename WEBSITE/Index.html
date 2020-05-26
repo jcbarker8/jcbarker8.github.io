@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="main.css" />
+	  <title>🎣Catch The FISH🎣</title>
+	  <script>
+	  	function banner(){
+	  	  var text = confirm("ARE YOU SURE YOU WANT TO CLICK THIS BUTTON SOMETHING MIGHT HAPPEN SOMETHING MIGHT NOT");
+	  	  return text;	  	  
+	  	}
+
+	  	function answer(){
+	  	  var radio = document.getElementsByName("trivia");
+		  var selection = false;
+		  var message = "";
+	  	  for( var i = 0; i < radio.length; i++) {
+		    if(radio[i].value == "yes" && radio[i].checked == true) { selection = true;
+		    } //end if statement
+		  } //end for loop
+		  if(selection == true) {
+message = message + "<b><p style='color:green'>OH MY GOD WOOOOW!</p></b>";
+} else {
+message = message + "<b><p style='color:ORANGE'>THATS JUST DEPRRESING.</p></b>";
+}
+document.getElementById("response").innerHTML = message;
+	  	}
+	  </script>
+	</head>
+	<body id="background">
+
+	<a onclick="return banner()" href="https://youtube.com">
+
+	  <h1><header id="banner"> <span class="wrap-text">🐠</span></header></h1>
+	
+	</a>
+		  <nav>	
+          	<ul id="navmenu"> 
+          	  <li class=navitems> <a href="index.html"> RELOAD </a> </li>
+          	  <li class=navitems> <a href="games.html"> FISH </a> </li>
+          	  <li class=navitems> <a href="videos.html"> SHARK </a> </li>
+          	</ul>
+          </nav>
+
+          <div class="rightside">
+   		  <div class="wrap-trivia">
+   <h2>Fish Trivia Question</h2>
+    <p class="paragraph">WHAT IS THE BIGGEST FISH THAT LIVES NOW</p>
+    <form>
+    <div id="response"></div>
+	  <input type="radio" name="trivia" value="no">  GOLD FISH <br>
+      <input type="radio" name="trivia" value="yes"> WHALE SHARK <br>
+	  <input type="radio" name="trivia" value="no"> ORCA/KILLER WHALE <br>
+	  <input type="radio" name="trivia" value="no"> MARLIN/SWORDFISH <br>
+	  <input onclick="answer()" id="button" type="button" value="Please Click Me">
+    </form>	
+    	 </div>
+     <img width= 49% height= 296 src="https://thumbs.dreamstime.com/b/man-woman-fish-22129161.jpg"/>
+	 <img width= 50% height= 296 src="https://thumbs.dreamstime.com/b/reef-shark-18045868.jpg"/>	  
+  		 </div> <!-- closing rightside div tag -->
+
+  		 <div class="leftside">
+	  <h1>🎣Can You Catch The FAT JUICY FISH?🎣</h1>
+   <p>
+	  <h3>Be careful though the big scary <strong>🦈SHARK🦈</strong> is down there to so don't fall in, or you might be bit by the hungry mean shark looking for <i>🍔food🍔</i>, now lets play the <u>🎮Game🎮</u>!!!</h3>
+    </p>
+
+	<div class="wrap-list">
+	  <ul>
+	  	<li class="listitem"><u>Do Not</u> fall out of the boat</li>
+	  	<li class="listitem">Do your best to land on the blue for the best catch of the day!</li>
+	  	<li class="listitem">If you pull up the <mark>HUNGRY SHARK</mark> you earn $10,000!!!
+	  </ul>
+	  <video width="630" height="350" controls="autoplay">
+  <source src="https://www.youtube.com/watch?v=WPCpCxOAlJ8" type="video/mp4">
+    </div>
+
+  		 </div> <!-- closing leftside div tag -->
+  		 <div class="clearfloat"></div>
+
+
+		  <audio width="450" height="700" controls>
+		    <source src="https://www.fesliyanstudios.com/play-mp3/283">
+		  </audio>
+
+		  <h1><marquee> Phillip The Fish Is The Name</marquee></h1>
+		  ONLY PLAY FORTNITE FOR PHILIP THE FLOPPER
+		  <footer id="footer"><u>Phillip The Fish</u> Made This Website</footer>
+	</body>
+	<a href="file:///Users/Jacob/Desktop/Website/Index.html">THE GAME</a>
+
+</html>
